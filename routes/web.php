@@ -15,13 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    $data = [
-        'dados' => [
-            'user' => 'Dimas Neto',
-            'post' => 'Mensagem do meu post.'
-        ]
-    ];
-
-    return view('welcome', $data);
+    return view('welcome');
 });
 

@@ -7,9 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    <h3>Components</h3>
-    <hr>
-    {{-- <p>{{$dados['user']}} - {{$dados['post']}}</p> --}}
-    <x-post :dados="$dados"/>
+    <div>
+        <h1>Components</h1>
+        <hr>
+        @for($i=0 ; $i<10 ; $i++)
+            <x-alert/>
+            <x-users.posts/>
+        @endfor
+    </div>
+
+
 </body>
 </html>
