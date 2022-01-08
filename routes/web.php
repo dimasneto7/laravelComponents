@@ -15,23 +15,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    $data = array(
-
-        'posts' => [
-            [
-                'usuario' => 'Dimas',
-                'mensagem' => 'Mensagem do Dimas'
-            ],
-            [
-                'usuario' => 'Priscilla',
-                'mensagem' => 'Mensagem da Priscilla'
-            ],
-            [
-                'usuario' => 'Isabella',
-                'mensagem' => 'Mensagem da Isabella'
-            ],
-        ]
-    );
+    $data = [
+        'nome' => 'Dimas Neto',
+        'nacionalidade' => 'Brasileira',
+        'dataNascimento' => '01-01-2001'
+    ];
 
     return view('welcome', $data);
 });

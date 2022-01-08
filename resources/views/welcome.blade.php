@@ -7,17 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <h1>Components</h1>
-        <hr>
+   <h3>Components</h3>
+   <hr>
 
-        @foreach ($posts as $post)
-
-            <x-post :post="$post"/>
-
-        @endforeach
-    </div>
-
+   <x-identificacao :nome="$nome" :nacionalidade="$nacionalidade" :data-nascimento="$dataNascimento"/>
 
 </body>
 </html>
