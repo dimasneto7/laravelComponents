@@ -7,11 +7,11 @@ use Illuminate\View\Component;
 class Post extends Component
 {
 
-    public $post;
+    public $entrada;
 
-    public function __construct($dados)
+    public function __construct($post)
     {
-        $this->post = $dados;
+        $this->entrada = $post;
     }
 
     public function render()

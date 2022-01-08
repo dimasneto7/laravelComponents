@@ -10,10 +10,12 @@
     <div>
         <h1>Components</h1>
         <hr>
-        @for($i=0 ; $i<10 ; $i++)
-            <x-alert/>
-            <x-users.posts/>
-        @endfor
+
+        @foreach ($posts as $post)
+
+            <x-post :post="$post"/>
+
+        @endforeach
     </div>
 
 

@@ -15,6 +15,24 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    return view('welcome');
+    $data = array(
+
+        'posts' => [
+            [
+                'usuario' => 'Dimas',
+                'mensagem' => 'Mensagem do Dimas'
+            ],
+            [
+                'usuario' => 'Priscilla',
+                'mensagem' => 'Mensagem da Priscilla'
+            ],
+            [
+                'usuario' => 'Isabella',
+                'mensagem' => 'Mensagem da Isabella'
+            ],
+        ]
+    );
+
+    return view('welcome', $data);
 });
 
